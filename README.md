@@ -1,13 +1,13 @@
 Live Demo: https://yusuf-tosin-lendsqr-fe-test.vercel.app/ This project was bootstrapped with Create React App - Typescript
 
 Tools and packages used
-React JS, Typescript, SCSS and Day JS To lauch the app on local environment run git clone https://github.com/Mohkabir/lendsqr-fe-test.git npm install npm start
+React JS, Typescript, SCSS and Day JS To lauch the app on local environment run git clone https://github.com/Tosinyusuf/lendsqr-fe-test.git npm install npm start
 
 State Management
 Context Api was used to manage this App.
 
 Log in
-After starting the app the login page comes up first users can either login with a random email and password or use one of the email of the users comming from the mock api e.g Frederique_Kohler@gmail.com with a random password. Login with the user from the mock Api gives an extral user avatar on the the dashboard.
+After starting the app the login page comes up first users can either login with a random email and password or use one of the email of the users comming from the mock api e.g yusuftosco@gmail.com with a random password. Login with the user from the mock Api gives an extral user avatar on the the dashboard.
 
 Dashboard
 After login user can view different page on the side nav. There is however only one route with enough data which is the USERS routes.
