@@ -1,0 +1,408 @@
+.userDetails {
+  width: 90%;
+  margin: 0 auto;
+  .back {
+    margin-top: 65px;
+    button {
+      cursor: pointer;
+      background-color: inherit;
+      border: none;
+    }
+  }
+  .pageHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px 0;
+    & > div {
+      display: flex;
+      button {
+        border: 1px solid #e4033b;
+        color: #e4033b;
+        border-radius: 8px;
+        font-weight: 600;
+        padding: 12px 20px;
+        letter-spacing: 10%;
+        line-height: 16.42px;
+        margin-left: 20px;
+        background-color: white;
+        cursor: pointer;
+        &:hover {
+          background: #e4033b;
+          color: white;
+        }
+      }
+      & > :nth-child(2) {
+        color: #39cdcc;
+        border: 1px solid #39cdcc;
+        &:hover {
+          background: #39cdcc;
+        }
+      }
+    }
+  }
+  .profileCard {
+    background: #ffffff;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    padding: 30px;
+    padding-bottom: 0;
+    .profileData {
+      display: flex;
+      align-items: center;
+      & > div {
+        width: 25%;
+      }
+      & > div:nth-child(1) {
+        display: flex;
+        width: 32%;
+        align-items: center;
+        svg,
+        img {
+          width: 100px;
+          margin-right: 20px;
+          border-radius: 50px;
+        }
+        p {
+          margin-top: 10px;
+          color: #545f7d;
+        }
+      }
+
+      & > div:nth-child(2) {
+        padding: 20px 30px;
+        width: 15%;
+        border-right: 1px solid rgba(84, 95, 125, 0.2);
+        border-left: 1px solid rgba(84, 95, 125, 0.2);
+        .ratings {
+          margin-top: 11px;
+          display: flex;
+          align-items: center;
+          svg,
+          img {
+            margin-right: 5px;
+          }
+        }
+      }
+      & > div:nth-child(3) {
+        border: none;
+        padding-left: 30px;
+        p {
+          margin-top: 10px;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+    }
+
+    .userDetailsNav {
+      margin-top: 50px;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        li {
+          padding: 0 20px;
+          padding-bottom: 10px;
+          border-bottom: 2px solid white;
+          cursor: pointer;
+          font-weight: 400;
+          font-size: 17px;
+          line-height: 19.09px;
+          color: rgba(0, 0, 0, 0.8);
+        }
+        .active {
+          border-bottom: 2px solid #39cdcc;
+          color: #39cdcc;
+        }
+      }
+    }
+  }
+
+  .otherUserInfo {
+    background: #ffffff;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    .nodata {
+      text-align: center;
+      height: 500px;
+    }
+    & > div:not(:first-child) {
+      padding: 35px 0;
+    }
+    & > div:not(:last-child) {
+      border-bottom: 1px solid rgba(33, 63, 125, 0.1);
+
+    }
+    & > div {
+      padding: 5px 0;
+      padding-bottom: 35px;
+      & > div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 15px;
+        & > div {
+          margin-top: 35px;
+          width: 18%;
+          h6 {
+            font-weight: 400;
+            color: #545f7d;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+          }
+          span {
+            color: #545f7d;
+            word-break: break-all;
+            word-wrap: break-word;
+          }
+        }
+      }
+    }
+    & > div:nth-child(1) {
+      & > div {
+        & > div {
+          width: 18%;
+        }
+      }
+    }
+    & > div:nth-child(2) {
+      & > div {
+        & > div {
+          width: 23%;
+        }
+      }
+    }
+  }
+  @media (max-width: 1150px) {
+    width: 95%;
+  }
+
+  @media (max-width: 1000px) {
+    .back {
+      margin-top: 35px;
+    }
+    .pageHead {
+      margin: 22px 0;
+      h3 {
+        font-size: 16px;
+      }
+      & > div {
+        button {
+          padding: 8px 15px;
+          margin-left: 20px;
+          font-size: 12px;
+        }
+      }
+    }
+    .profileCard {
+      padding: 20px;
+      padding-bottom: 0px;
+
+      .profileData {
+        & > div:nth-child(1) {
+          svg {
+            width: 60px;
+            margin-right: 15px;
+          }
+          h3 {
+            font-size: 16px;
+          }
+          p {
+            margin-top: 2px;
+            font-size: 12px;
+          }
+        }
+
+        & > div:nth-child(2) {
+          padding: 15px 30px;
+          width: 20%;
+          .ratings {
+            margin-top: 5px;
+            svg {
+              margin-right: 3px;
+            }
+          }
+        }
+        & > div:nth-child(3) {
+          width: 30%;
+          p {
+            margin-top: 1px;
+            font-size: 12px;
+            line-height: 14px;
+          }
+          h3 {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .userDetailsNav {
+        margin-top: 30px;
+        ul {
+          li {
+            padding: 0 10px;
+            padding-bottom: 10px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .otherUserInfo {
+      padding: 20px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      & > div {
+        padding: 25px 0;
+        & > div {
+          & > div {
+            margin-top: 25px;
+            h6 {
+              margin-bottom: 3px;
+              font-size: 10px;
+            }
+            span {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 760px) {
+    .back {
+      text-align: right;
+      width: 95%;
+      margin: 0 auto;
+      margin-top: 15px;
+    }
+    .pageHead {
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 22px auto;
+
+      h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      & > div {
+        button {
+          padding: 4px 10px;
+          margin-left: 0px;
+          margin-right: 10px;
+          font-size: 12px;
+        }
+      }
+    }
+    .profileCard {
+      width: 95%;
+      margin: 0 auto;
+      padding: 10px 10px;
+      .profileData {
+        justify-content: space-between;
+
+        & > div:nth-child(1) {
+          flex-direction: column;
+          align-items: flex-start;
+          width: 25%;
+          svg,
+          img {
+            width: 40px;
+            margin-right: 0px;
+          }
+          h3 {
+            font-size: 12px;
+            line-height: 14px;
+            margin: 0;
+          }
+          p {
+            margin-top: 0px;
+            font-size: 10px;
+          }
+        }
+
+        & > div:nth-child(2) {
+          padding: 5px 10px;
+          width: 35%;
+          p {
+            font-size: 12px;
+          }
+          .ratings {
+            margin-top: 5px;
+            svg {
+              margin-right: 3px;
+            }
+          }
+        }
+        & > div:nth-child(3) {
+          width: 35%;
+          padding-left: 0;
+          h3 {
+            font-size: 14px;
+            line-height: 16px;
+          }
+          p {
+            font-size: 10px;
+          }
+        }
+      }
+
+      .userDetailsNav {
+        margin-top: 20px;
+        ul {
+          flex-wrap: wrap;
+          align-items: flex-start;
+          li {
+            border-bottom: none;
+            width: 30%;
+            padding: 0px;
+            font-size: 10px;
+            margin-bottom: 10px;
+          }
+          .active {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+
+    .otherUserInfo {
+      padding: 5px 10px;
+      width: 95%;
+      margin: 0 auto;
+      & > div {
+        & > div {
+          & > div {
+            width: 45%;
+            & > div {
+              width: 45%;
+            }
+          }
+        }
+      }
+      & > div:nth-child(1) {
+        & > div {
+          & > div {
+            width: 45%;
+          }
+        }
+      }
+      & > div:nth-child(2) {
+        & > div {
+          & > div {
+            width: 45%;
+          }
+        }
+      }
+    }
+  }
+}
